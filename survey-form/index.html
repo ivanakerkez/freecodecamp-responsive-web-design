@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>freeCodeCamp Survey Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title">freeCodeCamp Survey Form</h1>
+                <p id="description">Thank you for taking the time to help us improve the platform!</p>
+            </header>
+        <form id="survey-form">
+            <div class="form-item">
+                <label id="name-label" for="name">Name: </label><input id="name" type="text" placeholder="Enter your name" class="input-format" required>
+            </div>
+            <div class="form-item">
+                <label id="email-label" for="email">Email: </label><input id="email" type="email" placeholder="Enter your email address" class="input-format" required>
+            </div>
+            <div class="form-item">
+                <label id="number-label" for="number">Age: </label><input id="number" type="number" min="16" max="120" placeholder="Enter your age" class="input-format" required>
+            </div>
+            <div class="form-item">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label><input name="recommend" type="radio" value="definitely" class="input-radio" checked>Definitely</label>
+                <label><input name="recommend" type="radio" value="maybe" class="input-radio">Maybe</label>
+                <label><input name="recommend" type="radio" value="not-sure" class="input-radio">Not sure</label>
+                <label><input name="recommend" type="radio" value="no" class="input-radio">No</label>
+            </div>
+            <div class="form-item">
+                <p>How did you hear about freeCodeCamp? </p>
+                    <select id="dropdown" class="input-format">
+                        <option disabled>-select your answer-</option>
+                        <option>from a friend</option>
+                        <option>on social media</option>
+                        <option>not sure</option>
+                  </select>
+            </div>
+            <div class="form-item">
+                <p>What certifications on freeCodeCamp are you interested in? <span class="note">(Check all that apply)</span></p>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="responsive-web-design">Responsive Web Design Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="javaScript-algorithms">JavaScript Algorithms and Data Structures Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="front-end-development-libraries">Front End Development Libraries Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="data-visualization">Data Visualization Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="relational database">Relational Database Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="back-end-development-and-apis">Back End Development and APIs Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="quality-assurance">Quality Assurance Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="scientific-computing-with-python">Scientific Computing with Python Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="data-analysis-with-python">Data Analysis with Python Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="information-security">Information Security Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="machine-learning-with-python">Machine Learning with Python Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="college-algebra-with-python">College Algebra with Python Certification</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="coding-interview-prep">Coding Interview Prep</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="project-euler">Project Euler</label>
+                    <label><input name="certifications" type="checkbox" class="input-checkbox" value="legacy-responsive-web-design">Legacy Responsive Web Design Certification</label>
+            </div>
+            <div class="form-item">
+                <p>Any comments or suggestions? <span class="note">We appreciate your feedback!</span></p>
+                <textarea id="comment" name="comment" class="input-comment" placeholder="Enter your comment here..."></textarea> 
+            </div>
+            <div class="form-item">
+                <button id="submit" type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+        </div>
+    </body>
+</html>
