@@ -1,0 +1,89 @@
+@media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
+
+#navbar {
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    width: 300px;
+    min-width: 290px;
+    height: 100%;
+    border-right: solid #093165;
+}
+
+#navbar ul {
+    list-style: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+}
+
+#navbar li {
+    border-top: 1px #093165 solid;
+    position: relative;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#navbar a:hover, #navbar a:active {
+    color: #093165;
+}
+
+header {
+    color: #093165;
+    margin: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px 10px;
+}
+
+#main-doc header {
+    margin: 0;
+    text-align: left;
+    font-size: 1.8em;
+}
+
+.main-section {
+    border-bottom: 1px solid #c2cfdf;
+    margin: 20px 0;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f0f7ff;
+    padding: 12px;
+    margin: 12px;
+    border-radius: 7px;
+}
